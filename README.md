@@ -1,2 +1,4 @@
-# cookbooks-base-server
-Chef cookbook for applying standard settings to servers
+# base_server
+
+TODO: Enter the cookbook description here.
+
