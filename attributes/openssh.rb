@@ -59,4 +59,3 @@ default['openssh']['client']['rhosts_r_s_a_authentication'] = 'no'
 default['openssh']['client']['r_s_a_authentication'] = 'yes'
 default['openssh']['client']['strict_host_key_checking'] = 'ask'
 default['openssh']['client']['tunnel'] = 'no'
-

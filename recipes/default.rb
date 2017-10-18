@@ -16,11 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 include_recipe 'base_server::users'
 include_recipe 'base_server::logging'
+include_recipe 'base_server::hardening'
+
 package 'procps'
 
 include_recipe 'sudo'
 include_recipe 'openssh'
-include_recipe 'os-hardening'

@@ -1,5 +1,3 @@
-# # encoding: utf-8
-
 # Inspec test for recipe base_server::default
 
 # The Inspec reference, with examples and extensive documentation, can be
@@ -16,5 +14,13 @@ include_controls 'ssh-hardening' do
   skip_control 'sshd-42'
   skip_control 'sshd-48'
 end
+
+include_controls 'DevSec Linux Baseline' do
+  skip_control 'os-06'
+  skip_control 'os-10'  # Waiting for os-hardening > 2.1.1 with https://github.com/dev-sec/chef-os-hardening/pull/169
+  skip_control 'sysctl-07'
+  skip_control 'sysctl-10'
+  skip_control 'sysctl-14'
+end
+
 # include_controls 'CIS Distribution Independent Linux Benchmark'
-# include_controls 'DevSec Linux Baseline'

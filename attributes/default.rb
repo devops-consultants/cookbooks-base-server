@@ -1,4 +1,4 @@
-default['authorization']['sudo']['groups'] = ["admin", "wheel", "sysadmin"]
+default['authorization']['sudo']['groups'] = %w[admin wheel sysadmin]
 default['authorization']['sudo']['include_sudoers_d'] = true
 default['authorization']['sudo']['sudoers_defaults'] = [
   '!visiblepw',
@@ -12,7 +12,6 @@ default['authorization']['sudo']['sudoers_defaults'] = [
   'always_set_home',
   'secure_path = /sbin:/bin:/usr/sbin:/usr/bin'
 ]
-
 
 default['logrotate']['global'] = {
   'daily' => true,
