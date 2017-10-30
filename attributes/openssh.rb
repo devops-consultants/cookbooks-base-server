@@ -37,7 +37,7 @@ default['openssh']['server']['t_c_p_keep_alive'] = 'no'
 default['openssh']['server']['use_login'] = 'no'
 default['openssh']['server']['use_p_a_m'] = 'yes'
 default['openssh']['server']['use_privilege_separation'] = 'sandbox'
-default['openssh']['server']['x11_forwarding'] = 'yes'
+default['openssh']['server']['x11_forwarding'] = 'no'
 default['openssh']['server']['x11_use_localhost'] = 'yes'
 
 default['openssh']['client']['address_family'] = 'any'

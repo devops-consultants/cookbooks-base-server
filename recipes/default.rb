@@ -24,3 +24,4 @@ package 'procps'
 
 include_recipe 'sudo'
 include_recipe 'openssh'
+include_recipe 'postfix'

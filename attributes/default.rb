@@ -35,3 +35,7 @@ default['logrotate']['global'] = {
     'rotate' => 1
   }
 }
+
+default['postfix']['mail_type'] = 'client'
+default['postfix']['main']['mydomain'] = 'devops-consultants.com'
+default['postfix']['main']['myorigin'] = 'devops-consultants.com'
