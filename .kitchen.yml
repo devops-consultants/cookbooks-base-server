@@ -9,6 +9,8 @@ transport:
 
 provisioner:
   name: dokken
+  http_proxy: <%= ENV['http_proxy'] %>
+  https_proxy: <%= ENV['http_proxy'] %>
 
 verifier:
   name: inspec
@@ -25,6 +27,10 @@ platforms:
       # privileged: true
       volumes:
         - /sys/fs/cgroup:/sys/fs/cgroup:ro # required by systemd
+  # - name: ubuntu-16.04
+  #   driver:
+  #     image: dokken/ubuntu-16.04
+  #     pid_one_command: /bin/systemd
 
 suites:
   - name: default

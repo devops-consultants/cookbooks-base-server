@@ -35,3 +35,4 @@ end
 include_recipe 'sudo'
 include_recipe 'openssh'
 include_recipe 'postfix'
+include_recipe 'fail2ban'

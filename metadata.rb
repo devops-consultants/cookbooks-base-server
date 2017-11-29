@@ -4,7 +4,7 @@ maintainer_email 'rob.coward@devops-consultants.co.uk'
 license 'Apache-2.0'
 description 'Installs/Configures base_server'
 long_description 'Installs/Configures base_server'
-version '0.1.5'
+version '0.1.6'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
@@ -27,3 +27,5 @@ depends 'openssh'
 depends 'rsyslog'
 depends 'logrotate'
 depends 'postfix', '~> 5.1'
+depends 'logwatch', '~> 2.1'
+depends 'fail2ban', '~> 4.0'
