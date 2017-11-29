@@ -1,0 +1,12 @@
+{
+    "id": "rob",
+    "ssh_keys": [
+      "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIB780ak26P1hV0eZy1GRhq7QvjlGo+gjyIB1JtPH0eVCqZ6xPvfghvGJ6MFBW6tSuWp7oAbOHVJJShYGsSy9egCUEntFjbsnqJhEnQwZVMAWmV7EmoES2l6UlFc1RGIBZDukDOLVqlDT4BEmqrrJG2zEPxqg4DCSIKLgpQCT58a2w== rob"
+    ],
+    "password": "$1$iy1dtSoo$6N9iKt1eTViNGX2ZUyNly/",
+    "groups": [
+      "sysadmin",
+      "devops"
+    ],
+    "comment": "Rob Coward"
+  }

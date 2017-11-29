@@ -16,11 +16,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+yum_repository 'ius' do
+    description "IUS Community Packages for Enterprise Linux 7 - $basearch"
+    baseurl "https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/$basearch"
+    gpgkey 'https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-GPG-KEY'
+    action :create
+end
+
 include_recipe 'base_server::users'
 include_recipe 'base_server::logging'
 include_recipe 'base_server::hardening'
 
-package 'procps'
+package 'epel-release'
+%w[procps tmux2u htop iftop atop].each do |pkg|
+    package pkg
+end
 
 include_recipe 'sudo'
 include_recipe 'openssh'
